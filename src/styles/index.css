@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  background-color: #b71b1b;
+}
+
+.App {
+  height: 100vh;
+  display: grid;
+  row-gap: 1.5rem;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 10% auto;
+  grid-template-areas:
+    '. header .'
+    '. content .';
+}
+
+
+header {
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-area: header;
+  margin-top: 1.5rem;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+}
+
+
+#screen {
+  margin-top: 1.5rem;
+  background-color: #343a40;
+  height: 70vh;
+  grid-area: content;
+  border-radius: 20px;
+  border: 20px solid #dedede;
+  border-top-width: 40px;
+  border-bottom-width: 40px;
+  background-image: linear-gradient(135deg, #343a40, white 3000px, #343a40);
+  overflow-y: auto;
+}
+
+#loader {
+  display: grid;
+  justify-items: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+
+#pokedex {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(5, 20%);
+}
+
+.poke-card {
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  margin: 1rem 0.5rem;
+  text-align: center;
+  
+}
+
+.poke-card figure {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: grid;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.single-poke-card{
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  margin: 150px 500px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.single-poke-card figure {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: grid;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.input{
+  margin-left: 370px;
+  border: 2px solid red;
+  border-radius: 10px;
+  height: 30px;
+  
+} 
+.nav-search {
+  border: 2px solid red;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.poke-card button{
+  margin-left:120px
+  
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:600px
+}
+
+.fav{
+  border: 2px solid green;
+  border-radius: 10px;
+  height: 30px;
+  
+}
+
+.favdiv{
+  
+margin: 200px 550px
+  
+}
+
+.favpokes{
+
+  
+  margin-top: 1.5rem;
+  background-color: #343a40;
+  height: 70vh;
+  grid-area: content;
+  border-radius: 20px;
+  border: 20px solid #dedede;
+  border-top-width: 40px;
+  border-bottom-width: 40px;
+  background-image: linear-gradient(135deg, #343a40, white 3000px, #343a40);
+  overflow-y: auto;
+}
+
