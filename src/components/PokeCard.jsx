@@ -41,7 +41,7 @@ const PokeCard = ({pokemon}) => {
       <div>#{id}</div>
       <div><strong>{name}</strong></div>
       
-      <Link to={`/pokemon/${name}`} >
+      <Link to={`/pokemon/${id}`} >
           details
         </Link>
       

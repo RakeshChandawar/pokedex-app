@@ -47,7 +47,6 @@ const Home = () => {
 
       await Promise.all(detailRequests).then(detailResults => {
         setPokemon([...pokemon, ...detailResults]);
-        console.log(pokemon)
       })
 
 
@@ -61,6 +60,8 @@ const Home = () => {
   useEffect(() => {
     const url = 'https://pokeapi.co/api/v2/pokemon/';
     searchPokedex(url)
+
+    return ()=>{}
   }, []);
 
   const renderPokemon = () => pokemon.map((p, i) => {
